@@ -1,9 +1,13 @@
-
+import Layout from "../components/Layout";
 
 function Apropos() {
-    return (
-        <h1>Page à propos</h1>
-    )
+  return (
+    <>
+      <Layout>
+        <h2>Contenu de la page "à propos"</h2>
+      </Layout>
+    </>
+  );
 }
 
-export default Apropos
+export default Apropos;

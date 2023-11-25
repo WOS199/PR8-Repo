@@ -14,7 +14,7 @@ import {
       errorElement: <ErrorPage />
     },
     {
-      path: 'apropos',
+      path: '/apropos',
       element: <Apropos />
     }
   ])
