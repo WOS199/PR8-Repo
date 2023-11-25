@@ -1,10 +1,11 @@
 import Layout from "../components/Layout";
+import CollapseTxtBox from "../components/TxtCollapse";
 
 function Apropos() {
   return (
     <>
       <Layout>
-        <h2>Contenu de la page "à propos"</h2>
+        <CollapseTxtBox />
       </Layout>
     </>
   );
