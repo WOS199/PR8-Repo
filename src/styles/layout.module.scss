@@ -19,13 +19,14 @@ body {
 a {
     text-decoration: none;
     color: $Primary;
+    text-transform: uppercase;
 
     &:global(.active) {
         text-decoration: underline;
     }
 
-    @media screen and (max-width: $md-breakpoint) {
-        text-transform: uppercase;
+    @media screen and (min-width: $md-breakpoint) {
+        text-transform: capitalize;
     }
 }
 
@@ -47,9 +48,10 @@ a {
         padding: 10px 0;
         text-align: center;
         color: #fff;
+        max-width: 100px;
 
-        @media screen and (max-width: $md-breakpoint) {
-            max-width: 100px;
+        @media screen and (min-width: $md-breakpoint) {
+            max-width: unset;
         }
     }
 }
