@@ -1,8 +1,13 @@
-
+import Layout from "../components/Layout"
+import Error from "../components/Error"
 
 function ErrorPage() {
     return (
-        <h1>404</h1>
+        <>
+      <Layout>
+        <Error />
+      </Layout>
+    </>
     )
 }
 
