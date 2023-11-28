@@ -1,9 +1,9 @@
 @import './variables.scss';
 
 .collapseContainer {
-    margin: 0 20px;
+    margin: 0 20px 20px 20px;
     border-radius: 5px;
-    background-color: #E5E5E5;
+    background-color: $LightGrey;
     color: #fff;
     flex-direction: column;
     justify-content: center;
@@ -13,21 +13,16 @@
     img {
         position: absolute;
         width: 25px;
-        top: 10px;
-        right: 15px;
+        top: 5px;
+        right: 10px;
         align-self: flex-end;
         rotate: 180deg;
     }
 
-    /* & > * {
-        padding: 15px;
-        border-radius: 5px;
-    } */
-
     h3 {
         background-color: $Primary;
         border-radius: 5px;
-        padding: 15px;
+        padding: 10px;
     }
 
     div {

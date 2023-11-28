@@ -7,7 +7,9 @@ function App() {
   return (
     <>
       <Layout>
-        <Hero />
+        <Hero>
+          Chez vous, partout et ailleurs
+        </Hero>
         <LgmtList />
       </Layout>
     </>
