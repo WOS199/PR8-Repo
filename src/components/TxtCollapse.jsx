@@ -1,6 +1,5 @@
 import { useState } from "react";
 import styles from '../styles/CollapseTxtBox.module.scss'
-import arrowUp from '../assets/arrowUp.png'
 
 function CollapseTxtBox ({children}) {
 

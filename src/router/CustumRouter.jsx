@@ -2,6 +2,7 @@ import React from "react";
 import App from "../App";
 import Apropos from "../pages/Apropos";
 import ErrorPage from "../pages/ErrorPage";
+import LgmtFiche from "../components/LgmtFiche";
 import { 
     createBrowserRouter,
     RouterProvider
@@ -16,6 +17,10 @@ import {
     {
       path: '/apropos',
       element: <Apropos />
+    },
+    {
+      path: "/fichesLogements/:id",
+      element: <LgmtFiche />
     }
   ])
 
