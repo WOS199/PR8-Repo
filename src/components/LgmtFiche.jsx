@@ -5,10 +5,10 @@ import Carousel from "./Carousel";
 function LgmtFiche () {
 
     const params = useParams();
-    
+
     return (
         <Layout>
-            <h2>Page concernant la fiche {params.id}</h2>
+            {/* <h2>Page concernant la fiche {params.id}</h2> */}
             <Carousel itemId={params.id} />
         </Layout>
     )
