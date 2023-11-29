@@ -2,7 +2,7 @@ import React from "react";
 import App from "../App";
 import Apropos from "../pages/Apropos";
 import ErrorPage from "../pages/ErrorPage";
-import LgmtFiche from "../components/LgmtFiche";
+import LgmtFiche from "../pages/LgmtFiche";
 import { 
     createBrowserRouter,
     RouterProvider
