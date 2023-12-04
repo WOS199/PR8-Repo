@@ -8,21 +8,6 @@
         flex-direction: row;
     }
 
-    h1, p {
-        color: $Primary;
-        margin: 0 20px 0 20px;
-    }
-    
-    h1 {
-        font-weight: 200;
-        font-size: 18px;
-    }
-    
-    p {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
     .hostScale {
         margin-right: 20px;
         justify-content: space-between;
@@ -41,6 +26,39 @@
     }
 }
 
+h1, p, ul {
+    color: $Primary;
+    margin: 0 20px 0 20px;
+}
+
+h1 {
+    font-weight: 200;
+    font-size: 18px;
+}
+
+p, ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 15px;
+}
+
+.collapsibles {
+    flex-direction: column;
+
+    @media screen and (min-width: $md-breakpoint) {
+        flex-direction: row;
+    }
+
+    & > div {
+        @media screen and (min-width: $md-breakpoint) {
+            width: 50%;
+        }
+    }
+}
 
 
 .lgmtTags {

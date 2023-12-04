@@ -9,6 +9,13 @@
     justify-content: center;
     position: relative;
     cursor: pointer;
+    max-height: 500px;
+    height: fit-content;
+    transition: max-height 0.3s ease-in-out;
+
+    &.collapsed {
+        max-height: 36px;
+    } 
 
     img {
         position: absolute;
@@ -20,12 +27,16 @@
     }
 
     h3 {
+        position: absolute;
+        top: 0;
+        width: 100%;
         background-color: $Primary;
         border-radius: 5px;
         padding: 10px;
     }
 
     div {
+        margin-top: 36px;
         color: #282828;
 
         p {
@@ -49,7 +60,7 @@
 
 .expanded {
     div {
-        max-height: 180px;
+        max-height: 500px;
         overflow: hidden;
         transition: max-height 0.3s ease-in-out;
     }
