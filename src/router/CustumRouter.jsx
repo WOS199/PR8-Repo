@@ -6,7 +6,7 @@ import LgmtFiche from "../pages/LgmtFiche";
 import { 
     createBrowserRouter,
     RouterProvider
-  } from 'react-router-dom'
+} from 'react-router-dom'
 
   const router = createBrowserRouter([
     {

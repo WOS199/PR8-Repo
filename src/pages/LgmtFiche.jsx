@@ -4,6 +4,8 @@ import Carousel from "../components/Carousel";
 import LgmtTags from "../components/LgmtTags";
 import logementData from '../data/logements.json'
 import styles from '../styles/lgmtFiche.module.scss'
+import StarScale from "../components/StarScale";
+import Host from "../components/Host";
 
 function LgmtFiche () {
 
@@ -14,9 +16,17 @@ function LgmtFiche () {
     return (
         <Layout>
             <Carousel itemId={params.id} pics={pictures}/>
-            <h1>{title}</h1>
-            <p>{location}</p>
-            <LgmtTags tags={tags} />
+            <div className={`flx ${styles.mainContainer}`}>
+                <div className={styles.propertyInfos}>
+                    <h1>{title}</h1>
+                    <p>{location}</p>
+                    <LgmtTags tags={tags} />
+                </div>
+                <div className={`flx ${styles.hostScale}`}>
+                    <StarScale rating={rating}/>
+                    <Host host={host}/>
+                </div>
+            </div>
         </Layout>
     )
 }

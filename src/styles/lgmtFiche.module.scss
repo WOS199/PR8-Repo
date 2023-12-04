@@ -1,19 +1,47 @@
 @import './variables.scss';
 
-h1, p {
-    color: $Primary;
-    margin: 0 20px 0 20px;
+.mainContainer {
+
+    flex-direction: column;
+
+    @media screen and (min-width: $md-breakpoint) {
+        flex-direction: row;
+    }
+
+    h1, p {
+        color: $Primary;
+        margin: 0 20px 0 20px;
+    }
+    
+    h1 {
+        font-weight: 200;
+        font-size: 18px;
+    }
+    
+    p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .hostScale {
+        margin-right: 20px;
+        justify-content: space-between;
+
+        @media screen and (min-width: $md-breakpoint) {
+            flex-direction: column-reverse;
+            align-items: flex-end;
+            width: 33.333%;
+        }
+    }
+
+    .propertyInfos {
+        @media screen and (min-width: $md-breakpoint) {
+            width: 66.666%;
+        }
+    }
 }
 
-h1 {
-    font-weight: 200;
-    font-size: 18px;
-}
 
-p {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
 
 .lgmtTags {
     display: flex;
