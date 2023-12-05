@@ -6,13 +6,6 @@ import arrowLeft from '../assets/arrowLeft.png'
 import arrowRight from '../assets/arrowRight.png'
 
 function Carousel ({itemId, pics}) {
-// Creating a table containing the pictures needed for our specific item
-/* let itemPics = [];
-logementData.forEach ((logement) => {
-    if (logement.id === itemId) {
-        itemPics = [...logement.pictures]
-    }
-}) */
 
 // Initializing the hook for the index state
 const [activeIndex, setActiveIndex] = useState(0);
@@ -27,6 +20,8 @@ const updateIndex = (newIndex) => {
     setActiveIndex(newIndex);
   };
 
+  const hide = pics.length === 1 ? {display: 'none'} : {display: 'flex'};
+
  return (
     <>
         <div className={`${styles.carouselContainer}`}>
@@ -37,7 +32,7 @@ const updateIndex = (newIndex) => {
                 <CarouselItem key={`${itemId}-${index}`} item={item}/>
                 ))}
             </div>
-            <div className={`${styles.carouselNav}`}>
+            <div className={`${styles.carouselNav}`} style={hide}>
                 <img src={arrowLeft} onClick={() => {updateIndex(activeIndex - 1)}}></img>
                 <img src={arrowRight} onClick={() => {updateIndex(activeIndex + 1)}}></img>
             </div>

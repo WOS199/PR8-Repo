@@ -1,14 +1,14 @@
-import Layout from "../components/Layout"
-import Error from "../components/Error"
+import Layout from "../components/Layout";
+import Error from "../components/Error";
 
 function ErrorPage() {
-    return (
-        <>
+  return (
+    <main>
       <Layout>
         <Error />
       </Layout>
-    </>
-    )
+    </main>
+  );
 }
 
-export default ErrorPage
+export default ErrorPage;

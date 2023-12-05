@@ -29,6 +29,7 @@
 
         @media screen and (min-width: $md-breakpoint) {
             height: 415px;
+            background-position: center;
         }
     }
 
@@ -36,7 +37,7 @@
         position: absolute;
         width: 100%;
         top: 40%;
-        display: flex;
+        /* display: flex; */
         justify-content: space-between;
 
         img {

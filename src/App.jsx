@@ -1,5 +1,6 @@
 import Layout from './components/Layout'
 import Hero from './components/Hero'
+import imgHero1 from './assets/paysage-1.jpg'
 import LgmtList from './components/LgmtList'
 
 function App() {
@@ -7,10 +8,12 @@ function App() {
   return (
     <>
       <Layout>
-        <Hero>
-          Chez vous, partout et ailleurs
-        </Hero>
-        <LgmtList />
+        <main>
+          <Hero background={imgHero1}>
+            Chez vous, partout et ailleurs
+          </Hero>
+          <LgmtList />
+        </main>
       </Layout>
     </>
   )
