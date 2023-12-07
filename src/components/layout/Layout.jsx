@@ -1,6 +1,6 @@
-import styles from '../styles/layout.module.scss'
-import logoSmall from '../assets/LogoKasa_small.png'
-import logoSmallWhite from '../assets/LogoKasa_small_white.png'
+import styles from './layout.module.scss'
+import logoSmall from '../../assets/LogoKasa_small.png'
+import logoSmallWhite from '../../assets/LogoKasa_small_white.png'
 import { NavLink } from 'react-router-dom'
 
 function Layout({children}) {
@@ -10,7 +10,7 @@ function Layout({children}) {
             <img src={logoSmall}></img>
             <div className={`flx ${styles.nav}`}>
                 <NavLink to='/'>Accueil</NavLink>
-                <NavLink to='/apropos'>A propos</NavLink>
+                <NavLink to='/About'>A propos</NavLink>
             </div>
         </div>
         <div>{children}</div>

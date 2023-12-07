@@ -1,9 +1,8 @@
-import logementData from '../data/logements.json'
 import CarouselItem from './CarouselItem';
 import { useState } from 'react'; 
-import styles from '../styles/carousel.module.scss'
-import arrowLeft from '../assets/arrowLeft.png'
-import arrowRight from '../assets/arrowRight.png'
+import styles from './carousel.module.scss'
+import arrowLeft from '../../assets/arrowLeft.png'
+import arrowRight from '../../assets/arrowRight.png'
 
 function Carousel ({itemId, pics}) {
 

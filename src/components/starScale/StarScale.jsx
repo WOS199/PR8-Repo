@@ -1,4 +1,4 @@
-import styles from '../styles/starScale.module.scss'
+import styles from './starScale.module.scss'
 
 function StarScale (rating) {
 

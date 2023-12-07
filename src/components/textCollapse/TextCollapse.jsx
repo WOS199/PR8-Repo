@@ -1,7 +1,7 @@
 import { useState } from "react";
-import styles from '../styles/CollapseTxtBox.module.scss'
+import styles from './TextCollapse.module.scss'
 
-function CollapseTxtBox ({children}) {
+function TextCollapse ({children}) {
 
     const [isCollapsed, setIsCollapsed] = useState(true);
 
@@ -21,4 +21,4 @@ function CollapseTxtBox ({children}) {
     )
 }
 
-export default CollapseTxtBox
+export default TextCollapse

@@ -1,8 +1,8 @@
 import React from "react";
-import App from "../App";
-import Apropos from "../pages/Apropos";
-import ErrorPage from "../pages/ErrorPage";
-import LgmtFiche from "../pages/LgmtFiche";
+import Home from "../pages/home/Home";
+import About from "../pages/about/About";
+import ErrorPage from "../pages/errorPage/ErrorPage";
+import Lodging from "../pages/lodging/Lodging";
 import { 
     createBrowserRouter,
     RouterProvider
@@ -11,16 +11,16 @@ import {
   const router = createBrowserRouter([
     {
       path: '/',
-      element: <App />,
+      element: <Home />,
       errorElement: <ErrorPage />
     },
     {
-      path: '/apropos',
-      element: <Apropos />
+      path: '/About',
+      element: <About />
     },
     {
-      path: "/fichesLogements/:id",
-      element: <LgmtFiche />
+      path: "/Lodging/:id",
+      element: <Lodging />
     }
   ])
 

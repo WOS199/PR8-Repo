@@ -1,16 +1,16 @@
 import { useParams } from "react-router-dom";
-import Layout from "../components/Layout";
-import Carousel from "../components/Carousel";
-import LgmtTags from "../components/LgmtTags";
-import logementData from "../data/logements.json";
-import styles from "../styles/lgmtFiche.module.scss";
-import StarScale from "../components/StarScale";
-import Host from "../components/Host";
-import arrowUp from "../assets/arrowUp.png";
-import CollapseTxtBox from "../components/TxtCollapse";
-import ErrorPage from "./ErrorPage";
+import Layout from "../../components/layout/Layout";
+import Carousel from "../../components/carousel/Carousel";
+import LodgingTags from "../../components/lodgingTags/LodgingTags";
+import logementData from "../../data/logements.json";
+import styles from "./Lodging.module.scss";
+import StarScale from "../../components/starScale/StarScale";
+import Host from "../../components/host/Host";
+import arrowUp from "../../assets/arrowUp.png";
+import TextCollapse from "../../components/textCollapse/TextCollapse";
+import ErrorPage from "../errorPage/ErrorPage";
 
-function LgmtFiche() {
+function Lodging() {
   const params = useParams();
   const logement = logementData.find((item) => item.id === params.id);
 
@@ -41,7 +41,7 @@ function LgmtFiche() {
           <div className={styles.propertyInfos}>
             <h1>{title}</h1>
             <p>{location}</p>
-            <LgmtTags tags={tags} />
+            <LodgingTags tags={tags} />
           </div>
           <div className={`flx ${styles.hostScale}`}>
             <StarScale rating={rating} />
@@ -49,14 +49,14 @@ function LgmtFiche() {
           </div>
         </div>
         <div className={`flx ${styles.collapsibles}`}>
-          <CollapseTxtBox>
+          <TextCollapse>
             <h3>Description</h3>
             <img src={arrowUp} />
             <div>
               <p>{description}</p>
             </div>
-          </CollapseTxtBox>
-          <CollapseTxtBox>
+          </TextCollapse>
+          <TextCollapse>
             <h3>Équipements</h3>
             <img src={arrowUp} />
             <div>
@@ -66,11 +66,11 @@ function LgmtFiche() {
                 ))}
               </ul>
             </div>
-          </CollapseTxtBox>
+          </TextCollapse>
         </div>
       </Layout>
     </main>
   );
 }
 
-export default LgmtFiche;
+export default Lodging;

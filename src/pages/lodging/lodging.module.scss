@@ -1,4 +1,4 @@
-@import './variables.scss';
+@import '../../styles/variables.scss';
 
 .mainContainer {
 
@@ -59,26 +59,3 @@ ul {
         }
     }
 }
-
-
-.lgmtTags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin: 0 20px 0 20px;
-
-    .lgmtTag {
-        background-color: $Primary;
-        padding: 0 20px 2px 20px;
-        border-radius: 5px;
-        width: fit-content;
-    
-        p {
-            color: #fff;
-            font-size: 10px;
-            margin: 0;
-            display: inline;
-        }
-    }
-}
-

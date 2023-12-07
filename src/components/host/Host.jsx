@@ -1,4 +1,4 @@
-import styles from '../styles/host.module.scss'
+import styles from './host.module.scss'
 
 function Host (host) {
 

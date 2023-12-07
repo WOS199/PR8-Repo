@@ -1,4 +1,4 @@
-import styles from '../styles/carousel.module.scss'
+import styles from './carousel.module.scss'
 
 function CarouselItem ({item}) {
 
