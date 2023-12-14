@@ -1,7 +1,7 @@
 import styles from './starScale.module.scss'
 
 function StarScale (rating) {
-
+    console.log(rating)
     const range = [ 1, 2, 3, 4, 5 ];
     const itemRating = parseInt(rating.rating)
 

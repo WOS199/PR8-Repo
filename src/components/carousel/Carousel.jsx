@@ -35,6 +35,9 @@ const updateIndex = (newIndex) => {
                 <img src={arrowLeft} onClick={() => {updateIndex(activeIndex - 1)}}></img>
                 <img src={arrowRight} onClick={() => {updateIndex(activeIndex + 1)}}></img>
             </div>
+            <div className={`${styles.carouselNumber}`} style={hide}>
+              <p>{activeIndex + 1} / {pics.length}</p>
+            </div>
         </div>
     </>
  )

@@ -21,8 +21,6 @@ function Lodging() {
   }
 
   const {
-    id,
-    cover,
     title,
     pictures,
     description,
